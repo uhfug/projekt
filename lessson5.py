@@ -42,7 +42,11 @@ tutors_and_klasses =(
 print(type(tutors_and_klasses), *tutors_and_klasses)
 
 #exercise 4
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+>>>>>>> old
 
 src = [300, 2, 12, 44, 1, 1, 4, 10, 7, 1, 78, 123, 55]
 result_num = []
@@ -55,6 +59,7 @@ result = (
 
 (list(result))
 print(result_num)
+<<<<<<< HEAD
 
 #exercise 5
 
@@ -72,3 +77,9 @@ for i in src_exercise_5:
     tmp.add(i)
 unique_nums_final = [i for i in src_exercise_5 if i in unique_nums]
 print((unique_nums_final))
+=======
+=======
+
+
+>>>>>>> old
+>>>>>>> old
