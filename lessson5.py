@@ -42,6 +42,7 @@ tutors_and_klasses =(
 print(type(tutors_and_klasses), *tutors_and_klasses)
 
 #exercise 4
+<<<<<<< HEAD
 
 src = [300, 2, 12, 44, 1, 1, 4, 10, 7, 1, 78, 123, 55]
 result_num = []
@@ -54,3 +55,7 @@ result = (
 
 (list(result))
 print(result_num)
+=======
+
+
+>>>>>>> old
