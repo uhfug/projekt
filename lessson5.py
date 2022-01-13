@@ -25,24 +25,22 @@ print(list(odd_to_n))
 '''
 #exercise 3
 
-from itertools import zip_longest
-
 tutors = [
         'Иван', 'Анастасия', 'Петр', 'Сергей',
         'Дмитрий', 'Борис', 'Елена'
     ]
 klasses = [
-        '9А', '7В', '9Б', '9В', '8Б', '10А', '10Б', '9А'
+        '9А', '7В', '9Б', '9В', '8Б', '10А',
     ]
-tutors_and_klasses =  zip_longest(tutors, klasses)
-for i in tutors_and_klasses:
-    print(i)
+
+tutors_and_klasses =(
+    (tutors[i], None) if i >= len(klasses)
+    else (tutors[i], klasses[i])
+    for i in range(len(tutors))
+)
+
+print(type(tutors_and_klasses), *tutors_and_klasses)
+
+#exercise 4
 
 
-'''
-tutors_and_klasses =[(tutors, klasses) for tutors, klasses in zip(tutors, klasses)]
-'''
-
-print(tutors_and_klasses)
-
-print((list(tutors_and_klasses)))
